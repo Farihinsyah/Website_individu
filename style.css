@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray;
+}
+.top-bar {
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: black;
+    border-top: 3px solid goldenrod;
+    border-bottom: 3px solid goldenrod;
+    background-image: url(fancy-cushion.png);
+    position: fixed;
+}
+.judul {
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.container {
+    width: 100%;
+    height: 1260px;
+    margin: 75px auto;
+}
+.header {
+    width: 100%;
+    height: auto;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    background-color: white;
+}
+.bio-pribadi {
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+}
+.header-foto {
+    background-color: goldenrod;
+    margin: 20px 30px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.foto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px white;
+}
+.narasi {
+    margin: 20px 30px;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-family: "poppins";
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+.angkatan {
+    width: 100%;
+    height: auto;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bio-angkatan {
+    width: 100%;
+    color: black;
+    font-size: 25pt;
+    text-align: center;
+}
+.teman {
+    width: 600px;
+    margin: 20px;
+    height: 150px auto;
+    background-color: goldenrod;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.teman img {
+    width: 140px;
+    min-width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    box-shadow: 0 0 20px black;
+}
+.bio-text span {
+    margin: 0;
+    margin-left: 13px;
+    padding: 0;
+    color: black;
+    line-height: 2;
+    font-family: "poppins";
+}
+
+.bio-text .text{
+    display: flex;
+}
+.bio-text .text span:first-child{
+    min-width: 130px;
+}
+
+@media only screen and (max-width : 400px){
+    .teman{
+        flex-direction:  column;
+        margin: 20px 30px;
+    }
+    .teman img{
+        margin: 20px auto;
+    }
+}
